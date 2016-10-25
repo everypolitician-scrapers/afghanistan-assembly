@@ -1,0 +1,709 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" align="center" >
+<head id="ctl00_Head1"><title>
+
+</title>
+
+      
+
+<script type="text/javascript" src='js/jquery-1.4.4.min.js'></script>
+    <script type="text/javascript" src='js/ticker.js'></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link href="../css/stylesme.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/DefaultTheme/jquery-ui-1.8.14.css" type="text/css" rel="stylesheet" /></head>
+<body background="image/main_bg0.png" >
+    <form name="aspnetForm" method="post" action="document.aspx?Page=23&amp;Cat=37" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTg2MTA5MzMyOQ9kFgJmD2QWAgIDD2QWCAINDzwrAA0BDBQrAAcFFzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1FCsAAhYKHgtOYXZpZ2F0ZVVybAUtaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD0xHgVWYWx1ZQUBMR4ISW1hZ2VVcmxlHgRUZXh0BRNHZW5lcmFsIEluZm9ybWF0aW9uHgpTZWxlY3RhYmxlaBQrAAcFFzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1FCsAAhYKHwAFKWh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD0yHwEFATIfAmUfAwUMQ29uc3RpdHV0aW9uHwRnZBQrAAIWCh8ABS1odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL2RvY3VtZW50LmFzcHg/Q2F0PTkfAQUBOR8CZR8DBRJSdWxlcyBvZiBQcm9jZWR1cmUfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9MTkfAQUCMTkfAmUfAwURTGlicmFyeSAmIEFyY2hpdmUfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9MjYfAQUCMjYfAmUfAwUSQXNzZW1ibGllcyBIaXN0b3J5HwRnZBQrAAIWCh8ABS5odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL2RvY3VtZW50LmFzcHg/Q2F0PTg1HwEFAjg1HwJlHwMFC1B1YmxpY2F0aW9uHwRnZBQrAAIWCh8ABS5odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL2RvY3VtZW50LmFzcHg/Q2F0PTk2HwEFAjk2HwJlHwMFCkNvbnRhY3QgdXMfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9MjEfAQUCMjEfAmUfAwUMV0ogU3RydWN0dXJlHwRoFCsABgUTMDowLDA6MSwwOjIsMDozLDA6NBQrAAIWCh8ABSpodHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL3BhZ2UuYXNweD9DYXQ9MjgfAQUCMjgfAmUfAwUKTGVhZGVyc2hpcB8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD0yOR8BBQIyOR8CZR8DBQtDb21taXNzaW9ucx8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD0zMR8BBQIzMR8CZR8DBRRQYXJsaWFtZW50YXJ5IEdyb3Vwcx8EZ2QUKwACFgofAAUqaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9QYWdlLmFzcHg/Q2F0PTM4HwEFAjM4HwJlHwMFE0dlbmVyYWwgU2VjcmV0YXJpYXQfBGdkFCsAAhYKHwAFKmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD01MB8BBQI1MB8CZR8DBRVQLiBGcmllbmRzaGlwIEdyb3VwcyAfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9MzkfAQUCMzkfAmUfAwUQTmV3cyBhbmQgUmVwb3J0cx8EaBQrAAkFHzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1LDA6NiwwOjcUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD0xMB8BBQIxMB8CZR8DBQ9BY2NvbXBsaXNobWVudHMfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9NDAfAQUCNDAfAmUfAwUIU2Vzc2lvbiAfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9NDEfAQUCNDEfAmUfAwUMQ29tbWlzc2lvbnMgHwRnZBQrAAIWCh8ABS5odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL2RvY3VtZW50LmFzcHg/Q2F0PTQyHwEFAjQyHwJlHwMFCU1lZXRpbmdzIB8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD00Mx8BBQI0Mx8CZR8DBQVUcmlwcx8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD00NB8BBQI0NB8CZR8DBQhNZXNzYWdlcx8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD01Mh8BBQI1Mh8CZR8DBRNHZW5lcmFsIFNlY3JldGFyaWF0HwRnZBQrAAIWCh8ABS9odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL2RvY3VtZW50LmFzcHg/Q2F0PTEwMB8BBQMxMDAfAmUfAwULTVBzIFJlcG9ydHMfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9NTEfAQUCNTEfAmUfAwUJQmlvZ3JhcGh5HwRnFCsABAULMDowLDA6MSwwOjIUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD04NB8BBQI4NB8CZR8DBRVBZG1pbmlzdHJhdGlvbiBCb2FyZCAfBGdkFCsAAhYKHwAFKmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD05Mx8BBQI5Mx8CZR8DBRFTZWNyZXRhcnkgR2VuZXJhbB8EZ2QUKwACFgofAAUraHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9wYWdlLmFzcHg/Q2F0PTEwMR8BBQMxMDEfAmUfAwUNTVBzIEJpb2dyYXBoeR8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD04Nh8BBQI4Nh8CZR8DBQhSZXNvdWNlcx8EaBQrAAgFGzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1LDA6NhQrAAIWCh8ABSpodHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL3BhZ2UuYXNweD9DYXQ9ODcfAQUCODcfAmUfAwUbTGVnaXNsYXRpdmUgVHJhY2tpbmcgU3lzdGVtHwRnZBQrAAIWCh8ABSpodHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL3BhZ2UuYXNweD9DYXQ9ODgfAQUCODgfAmUfAwUOSVBVIEFjdGl2aXRpZXMfBGdkFCsAAhYKHwAFKmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD04OR8BBQI4OR8CZR8DBQ9QVUlDIEFjdGl2aXRpZXMfBGdkFCsAAhYKHwAFKmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD05MB8BBQI5MB8CZR8DBQRJRkxBHwRnZBQrAAIWCh8ABS5odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL0RvY3VtZW50LmFzcHg/Q2F0PTkxHwEFAjkxHwJlHwMFEU9yZGVycyBvZiB0aGUgZGF5HwRnZBQrAAIWCh8ABSpodHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL3BhZ2UuYXNweD9DYXQ9OTgfAQUCOTgfAmUfAwUEQVdQQx8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD05OR8BBQI5OR8CZR8DBRdDb250cmFjdHMgQWR2ZXJ0aXNlbWVudB8EZ2QUKwACFgofAAUqaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9wYWdlLmFzcHg/Q2F0PTkyHwEFAjkyHwJlHwMFE0dlbmVyYWwgU2VjcmV0YXJpYXQfBGgUKwADBQcwOjAsMDoxFCsAAhYKHwAFKmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD05NB8BBQI5NB8CZR8DBRRHZW5lcmFsIERpcmVjdG9yYXRlcx8EZ2QUKwACFgofAAUqaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9wYWdlLmFzcHg/Q2F0PTk1HwEFAjk1HwJlHwMFDERpcmVjdG9yYXRlcx8EZ2RkAg8PDxYCHwMFF1R1ZXNkYXkgMjUgT2N0b2JlciAyMDE2ZGQCEQ9kFgYCAQ88KwARAwAPFgQeC18hRGF0YUJvdW5kZx4LXyFJdGVtQ291bnQCBWQBEBYAFgAWAAwUKwAAFgJmD2QWDmYPDxYCHgdWaXNpYmxlaGRkAgEPZBYCZg9kFgwCAQ8PFgIfAAUafi9wdmUvc2hvd2RvYy5hc3B4P0lkPTE4NzNkFgJmDxYCHwMFFU1vaGFtbWFkIEFpcWJhbGwgU2FwaWQCAg8VAm5Nb2hhbW1hZCBBaXFiYWxsIFNhcGkgc29uIG9mIFNheWVkIEFnaGEgd2FzIGJvcm4gaW4gS2FwaXNhIHByb3ZpbmNlIGluIDE5Njk7IGhlIGlzIG1hcnJpZWQgYW5kIGxpdmVzIGluIEthYnVsLghEb2N1bWVudGQCAw8PFgIfAgUifi9pbWFnZS9JbWFnZV9XZWJTaXRlL0RvY3VtZW50LmJtcGRkAgQPFQEWU3VuZGF5IDI3IEphbnVhcnkgMjAxM2QCBQ8PFgIfAAUafi9wdmUvc2hvd2RvYy5hc3B4P0lkPTE4NzNkZAIHDw8WAh8ABRp+L3B2ZS9zaG93ZG9jLmFzcHg/SWQ9MTg3M2QWAmYPDxYCHwIFRmh0dHA6Ly93d3cud29sZXNpLndlYnNpdGUvTWVkaWEvSW1hZ2VzL21pbmUvbW9oYW1tYWQtZWdoYmFsLXNhZmktbS5KUEdkZAICD2QWAmYPZBYMAgEPDxYCHwAFGn4vcHZlL3Nob3dkb2MuYXNweD9JZD0xODcyZBYCZg8WAh8DBRZUYWhpcmEgTXVqYWRpZGktS2FwaXNhZAICDxUCyAFQZXJzb25hbCBiYWNrZ3JvdW5kOiBUYWhpcmEgTXVqYWRpZGksIGRhdWdodGVyIG9mIEdodWxhbSBOYXNydWRkaW4sIHdhcyBib3JuIGluIDE5NjMgaW4gdGhlIEtvaGlzdGFuIGRpc3RyaWN0IG9mIEthcGlzYS4gU2hlIGlzIHNpbmdsZS4gSGVyIGludGVyZXN0cyBpbmNsdWRlIHN0dWR5aW5nLCBzcG9ydHMgYW5kIG11c2ljLiBIZXIgZmlyc3QgbC4uLghEb2N1bWVudGQCAw8PFgIfAgUifi9pbWFnZS9JbWFnZV9XZWJTaXRlL0RvY3VtZW50LmJtcGRkAgQPFQEWU3VuZGF5IDI3IEphbnVhcnkgMjAxM2QCBQ8PFgIfAAUafi9wdmUvc2hvd2RvYy5hc3B4P0lkPTE4NzJkZAIHDw8WAh8ABRp+L3B2ZS9zaG93ZG9jLmFzcHg/SWQ9MTg3MmQWAmYPDxYCHwIFQmh0dHA6Ly93d3cud29sZXNpLndlYnNpdGUvTWVkaWEvSW1hZ2VzL21pbmUvdGFoZXJhLW1vamphZGFkaS1tLmpwZ2RkAgMPZBYCZg9kFgwCAQ8PFgIfAAUafi9wdmUvc2hvd2RvYy5hc3B4P0lkPTE4NzFkFgJmDxYCHwMFFEhhamkgQWdoYWphbiBzYXllZWRpZAICDxUCb0hhamkgQWdoYWphbiBzb24gb2YgU2F5eWVkIE1vaGFtbWFkIEtoYW4gd2FzIGJvcm4gaW4gS2FwaXNhICBwcm92aW5jZSBpbiAxOTU3LCBoZSBpcyBtYXJyaWVkIGFuZCBsaXZlcyBpbiBLYWJ1bAhEb2N1bWVudGQCAw8PFgIfAgUifi9pbWFnZS9JbWFnZV9XZWJTaXRlL0RvY3VtZW50LmJtcGRkAgQPFQEWU3VuZGF5IDI3IEphbnVhcnkgMjAxM2QCBQ8PFgIfAAUafi9wdmUvc2hvd2RvYy5hc3B4P0lkPTE4NzFkZAIHDw8WAh8ABRp+L3B2ZS9zaG93ZG9jLmFzcHg/SWQ9MTg3MWQWAmYPDxYCHwIFPmh0dHA6Ly93d3cud29sZXNpLndlYnNpdGUvTWVkaWEvSW1hZ2VzL21pbmUvaGFqaS1hZ2hhamFuLW0uSlBHZGQCBA9kFgJmD2QWDAIBDw8WAh8ABRp+L3B2ZS9zaG93ZG9jLmFzcHg/SWQ9MTg2OWQWAmYPFgIfAwURUXVlcmJhbmFsaS1FcmZvbmlkAgIPFQJnUXVlcmJhbmFsaS1FcmZvbmkgc29uIG9mIEFicmloaW0gd2FzIGJvcm4gaW4gMTk0NCwgaW4gQmFteWFuIHByb3ZpbmNlOyBoZSBpcyBtYXJyaWVkIGFuZCBsaXZlcyBpbiBLYWJ1bAhEb2N1bWVudGQCAw8PFgIfAgUifi9pbWFnZS9JbWFnZV9XZWJTaXRlL0RvY3VtZW50LmJtcGRkAgQPFQEZV2VkbmVzZGF5IDIzIEphbnVhcnkgMjAxM2QCBQ8PFgIfAAUafi9wdmUvc2hvd2RvYy5hc3B4P0lkPTE4NjlkZAIHDw8WAh8ABRp+L3B2ZS9zaG93ZG9jLmFzcHg/SWQ9MTg2OWQWAmYPDxYCHwIFQ2h0dHA6Ly93d3cud29sZXNpLndlYnNpdGUvTWVkaWEvSW1hZ2VzL21pbmUvbS1naG9yYmFuYWxpLWVyZmFuaS5qcGdkZAIFD2QWAmYPZBYMAgEPDxYCHwAFGn4vcHZlL3Nob3dkb2MuYXNweD9JZD0xODY4ZBYCZg8WAh8DBQ5FemF0dWxsYWggQXRlZmQCAg8VAl9FemF0dWxsYWggQXRlZiBzb24gb2YgTW9oYW1tZWQgUm96ZSB3YXMgYm9ybiBpbiBLYWJ1bCBpbiAxOTYzOyBoZSBpcyBtYXJyaWVkIGFuZCBsaXZlcyBpbiBLYWJ1bAhEb2N1bWVudGQCAw8PFgIfAgUifi9pbWFnZS9JbWFnZV9XZWJTaXRlL0RvY3VtZW50LmJtcGRkAgQPFQEZV2VkbmVzZGF5IDIzIEphbnVhcnkgMjAxM2QCBQ8PFgIfAAUafi9wdmUvc2hvd2RvYy5hc3B4P0lkPTE4NjhkZAIHDw8WAh8ABRp+L3B2ZS9zaG93ZG9jLmFzcHg/SWQ9MTg2OGQWAmYPDxYCHwIFQGh0dHA6Ly93d3cud29sZXNpLndlYnNpdGUvTWVkaWEvSW1hZ2VzL21pbmUvbS1lemF0dWxsYWgtYXRlZi5qcGdkZAIGDw8WAh8HaGRkAgMPDxYEHwAFDz9QYWdlPTIyJkNhdD0zNx8HZ2RkAgUPDxYEHwAFDz9QYWdlPTI0JkNhdD0zNx8HZ2RkAhMPZBYCAgcPPCsAEQIBEBYAFgAWAAwUKwAAZBgDBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUMY3RsMDAkc2VhcmNoBSNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIyJEdyaWRWaWV3MQ88KwAMAgICAggC/////w9kBSNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJEdyaWRWaWV3MQ88KwAMAgICAggCAWRqLpIPGMBUIU+LMhfcQeauSPiAZY0nwOPu+o9iDuFnZw==" />
+
+
+<script src="/WebResource.axd?d=gSdWIOibW5IZLLnjuJJBlrD2eJH5oEgVA0D1mxLiv1oG-pyxFEBGUsBL6IMOvg27Jr3wN6QtFrpNw3FXVmaVjkmUOqtTPJ8Dsrg7iyEN_5M1&amp;t=635586452020000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=3y3JYjjQrQLCJy1DMPW8mjOOBaP9QtzfBS1DjqX4QXdn2jLFtUD5O15a8x28jxSr3AH1z1yPeyDyO_KmulvnoTc-cOClVKvzU4y90hTYmZqxM52i4CHmfSQtWj-XgFi9w7kbqa6dQZFykxdmTDvVVtHCBlNRk15MxsVza5j8GM1EKGkmNWmJ6ynXEIG3c3FV0&amp;t=7b689585" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3E4FD855" />
+      
+    <div>
+   
+                  
+
+    <table cellpadding="0" cellspacing="0" width="970"  style="border: thick solid #FFFFFF; background-color: #FFFFFF" align="center">
+	<!-- MSTableType="layout" -->
+     <tr>
+		<td valign="top"  
+             style="font-family: Arial, Helvetica, sans-serif; font-size: small" >
+		<!-- MSCellType="empty" -->
+        
+		
+  </td>
+        
+	</tr>
+	<tr>
+		<td valign="top" height="120" 
+            
+            style="background-image: url('../image/wenglishlogo.JPG'); color: #FFFFFF;" >
+		<!-- MSCellType="empty" -->
+        <table cellpadding="0" cellspacing="0" width="970" >
+	<!-- MSTableType="layout" -->
+	<tr dir="rtl">
+		<td valign="top" height="61">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+<a href="../english.aspx" id="ctl00_A2" style="color: #FFFFFF; font-family: Tahoma; font-size: 10px;">Home</a> <span class="Separator">|</span>	
+<a href="../pashto.aspx" id="ctl00_A3" style="color: #FFFFFF; font-size: 10px; font-family: Tahoma;">پشتو</a> <span class="Separator">|</span>
+<a href="../dari.aspx" id="ctl00_A1" style="color: #FFFFFF; font-family: Tahoma; font-size: 10px;">دری</a> <span class="Separator">|</span>
+	</td>
+	</tr>
+	<tr>
+		<td valign="top" height="24">
+		<table cellpadding="0" cellspacing="0" width="970" dir="rtl" >
+			<!-- MSTableType="layout" -->
+			<tr>
+				<td valign="top" width="20">
+				<!-- MSCellType="empty" -->
+				</td>
+                <td valign="top" width="46">
+				<div class="searchbtn">
+                    <input type="image" name="ctl00$search" id="ctl00_search" src="../image/Image_WebSite/searchbtne.png" border="0" /></div>
+                </td>
+				 <td valign="top" width="140">
+				<div class="searchbox">
+                        <input name="ctl00$searchbox" type="text" id="ctl00_searchbox" /></div></td>
+				<td valign="top" height="22" width="749">
+				<!-- MSCellType="empty" -->
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" height="20" width="970">
+		<!-- MSCellType="empty" -->
+		</td>
+	</tr>
+	</table>
+
+
+	</td>
+	</tr>
+  
+	<tr style="height: 12px">
+    <td valign="top"   
+            
+            
+            style="border-width: 3px; border-color: #FFFFFF; border-top-style: solid; height: 40px; background-image: url('../image/nav-bg.png');" >	
+        <table cellpadding="0" cellspacing="0" width="970" height="24">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" width="720">
+		<!-- MSCellType="empty" -->
+			<table id="ctl00_Menu1" cellpadding="0" cellspacing="0" border="0" height="40" width="110">
+	<tr>
+		<td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n0"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="#"><font color="#838383">General Information</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand General Information" valign="middle" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n1"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="#"><font color="#838383">WJ Structure</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand WJ Structure" valign="middle" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n2"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="#"><font color="#838383">News and Reports</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand News and Reports" valign="middle" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n3"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=51"><font color="#838383">Biography</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand Biography" valign="middle" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n4"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="#"><font color="#838383">Resouces</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand Resouces" valign="middle" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n5"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="#"><font color="#838383">General Secretariat</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand General Secretariat" valign="middle" /></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><div id="ctl00_Menu1n0Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n6">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=2"><font color="#7A7A7A">Constitution</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n7">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=9"><font color="#7A7A7A">Rules of Procedure</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n8">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=19"><font color="#7A7A7A">Library & Archive</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n9">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=26"><font color="#7A7A7A">Assemblies History</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n10">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=85"><font color="#7A7A7A">Publication</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n11">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=96"><font color="#7A7A7A">Contact us</font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n0ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n0ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n1Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n12">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=28"><font color="#7A7A7A">Leadership</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n13">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=29"><font color="#7A7A7A">Commissions</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n14">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=31"><font color="#7A7A7A">Parliamentary Groups</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n15">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/Page.aspx?Cat=38"><font color="#7A7A7A">General Secretariat</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n16">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=50"><font color="#7A7A7A">P. Friendship Groups </font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n1ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n1ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n2Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n17">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=10"><font color="#7A7A7A">Accomplishments</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n18">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=40"><font color="#7A7A7A">Session </font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n19">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=41"><font color="#7A7A7A">Commissions </font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n20">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=42"><font color="#7A7A7A">Meetings </font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n21">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=43"><font color="#7A7A7A">Trips</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n22">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=44"><font color="#7A7A7A">Messages</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n23">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=52"><font color="#7A7A7A">General Secretariat</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n24">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=100"><font color="#7A7A7A">MPs Reports</font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n2ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n2ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n3Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n25">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=84"><font color="#7A7A7A">Administration Board </font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n26">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=93"><font color="#7A7A7A">Secretary General</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n27">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=101"><font color="#7A7A7A">MPs Biography</font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n3ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n3ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n4Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n28">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=87"><font color="#7A7A7A">Legislative Tracking System</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n29">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=88"><font color="#7A7A7A">IPU Activities</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n30">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=89"><font color="#7A7A7A">PUIC Activities</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n31">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=90"><font color="#7A7A7A">IFLA</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n32">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/Document.aspx?Cat=91"><font color="#7A7A7A">Orders of the day</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n33">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=98"><font color="#7A7A7A">AWPC</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n34">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=99"><font color="#7A7A7A">Contracts Advertisement</font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n4ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n4ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n5Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n35">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=94"><font color="#7A7A7A">General Directorates</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n36">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=95"><font color="#7A7A7A">Directorates</font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n5ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n5ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div></td>
+		<td valign="top" height="40" width="200">
+		<!-- MSCellType="empty" -->
+		  <span id="ctl00_Label1" style="display:inline-block;"><b><font face="tahoma" color="#009900" size="2">Tuesday 25 October 2016</font></b></span>
+        </td>
+	</tr>
+</table>
+
+
+
+
+       
+                          
+</td>
+	</tr>
+	
+    <tr>
+		<td valign="top" height="200">
+		    
+          
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div style="border-right: #89abd9 thin solid; border-top: #89abd9 thin solid; border-left: #89abd9 thin solid; border-bottom: #89abd9 thin solid;" 
+        >
+
+<div>
+	<table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_GridView1">
+		<tr>
+			<td>
+<table border="0" cellpadding="0" cellspacing="0" width="960" height="105">
+	<!-- MSTableType="layout" -->
+	
+	<tr>
+		<td valign="top" height="100" width="960">
+		<table border="0" cellpadding="0" cellspacing="0" width="960" height="100">
+	<!-- MSTableType="layout" -->
+	<tr>
+	<td valign="top" width="650">
+	<table cellpadding="0" cellspacing="0" width="690" height="100">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td valign="top" colspan="3" height="23" align="left">
+			<!-- MSCellType="empty" -->
+			    <a id="ctl00_ContentPlaceHolder1_GridView1_ctl02_HyperLink1t" href="showdoc.aspx?Id=1873"><font color="#CC6600" size="5">Mohammad Aiqball Sapi</font></a></td></tr><tr>
+			<td valign="top" colspan="3" height="56" align="left">
+			<!-- MSCellType="empty" -->
+			    Mohammad Aiqball Sapi son of Sayed Agha was born in Kapisa province in 1969; he is married and lives in Kabul.</td>
+		</tr>
+		<tr>
+			<td valign="top" width="360" style="font-size: 10pt;" align="right">
+			<!-- MSCellType="empty" -->     Document<img id="ctl00_ContentPlaceHolder1_GridView1_ctl02_Image3" src="../image/Image_WebSite/Document.bmp" border="0" />
+			</td>
+			<td valign="top" width="300" style="font-size: 12pt;" align="right">
+			    <SUB>Sunday 27 January 2013</SUB>
+			</td>
+			<td valign="top" height="21" width="190">
+			    <a id="ctl00_ContentPlaceHolder1_GridView1_ctl02_HyperLink2" href="showdoc.aspx?Id=1873"><font size="2">Read more...<img id="ctl00_ContentPlaceHolder1_GridView1_ctl02_Image1" src="../image/Image_WebSite/red_dbl_arrwr.gif" border="0" /></font></a>
+			</td>
+		</tr>
+	</table>
+	</td>
+		<td valign="top" height="100" width="100">
+		<!-- MSCellType="ContentBody" -->
+		
+		
+		<a id="ctl00_ContentPlaceHolder1_GridView1_ctl02_HyperLink1" href="showdoc.aspx?Id=1873"><img id="ctl00_ContentPlaceHolder1_GridView1_ctl02_Image2" src="http://www.wolesi.website/Media/Images/mine/mohammad-eghbal-safi-m.JPG" height="75" width="105" border="0" /></a></td></tr><tr>
+		<td valign="top">
+		<!-- MSCellType="ContentBody" -->
+		</td>
+	</tr>
+</table>
+            <table border="0" cellpadding="0" cellspacing="0" width="960" height="3" style="background-color: #9999ff;">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" height="3" width="960">
+		<!-- MSCellType="ContentBody" -->
+		</td>
+	</tr>
+</table>
+</td>
+	</tr>
+</table>
+</td>
+		</tr><tr>
+			<td>
+<table border="0" cellpadding="0" cellspacing="0" width="960" height="105">
+	<!-- MSTableType="layout" -->
+	
+	<tr>
+		<td valign="top" height="100" width="960">
+		<table border="0" cellpadding="0" cellspacing="0" width="960" height="100">
+	<!-- MSTableType="layout" -->
+	<tr>
+	<td valign="top" width="650">
+	<table cellpadding="0" cellspacing="0" width="690" height="100">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td valign="top" colspan="3" height="23" align="left">
+			<!-- MSCellType="empty" -->
+			    <a id="ctl00_ContentPlaceHolder1_GridView1_ctl03_HyperLink1t" href="showdoc.aspx?Id=1872"><font color="#CC6600" size="5">Tahira Mujadidi-Kapisa</font></a></td></tr><tr>
+			<td valign="top" colspan="3" height="56" align="left">
+			<!-- MSCellType="empty" -->
+			    Personal background: Tahira Mujadidi, daughter of Ghulam Nasruddin, was born in 1963 in the Kohistan district of Kapisa. She is single. Her interests include studying, sports and music. Her first l...</td>
+		</tr>
+		<tr>
+			<td valign="top" width="360" style="font-size: 10pt;" align="right">
+			<!-- MSCellType="empty" -->     Document<img id="ctl00_ContentPlaceHolder1_GridView1_ctl03_Image3" src="../image/Image_WebSite/Document.bmp" border="0" />
+			</td>
+			<td valign="top" width="300" style="font-size: 12pt;" align="right">
+			    <SUB>Sunday 27 January 2013</SUB>
+			</td>
+			<td valign="top" height="21" width="190">
+			    <a id="ctl00_ContentPlaceHolder1_GridView1_ctl03_HyperLink2" href="showdoc.aspx?Id=1872"><font size="2">Read more...<img id="ctl00_ContentPlaceHolder1_GridView1_ctl03_Image1" src="../image/Image_WebSite/red_dbl_arrwr.gif" border="0" /></font></a>
+			</td>
+		</tr>
+	</table>
+	</td>
+		<td valign="top" height="100" width="100">
+		<!-- MSCellType="ContentBody" -->
+		
+		
+		<a id="ctl00_ContentPlaceHolder1_GridView1_ctl03_HyperLink1" href="showdoc.aspx?Id=1872"><img id="ctl00_ContentPlaceHolder1_GridView1_ctl03_Image2" src="http://www.wolesi.website/Media/Images/mine/tahera-mojjadadi-m.jpg" height="75" width="105" border="0" /></a></td></tr><tr>
+		<td valign="top">
+		<!-- MSCellType="ContentBody" -->
+		</td>
+	</tr>
+</table>
+            <table border="0" cellpadding="0" cellspacing="0" width="960" height="3" style="background-color: #9999ff;">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" height="3" width="960">
+		<!-- MSCellType="ContentBody" -->
+		</td>
+	</tr>
+</table>
+</td>
+	</tr>
+</table>
+</td>
+		</tr><tr>
+			<td>
+<table border="0" cellpadding="0" cellspacing="0" width="960" height="105">
+	<!-- MSTableType="layout" -->
+	
+	<tr>
+		<td valign="top" height="100" width="960">
+		<table border="0" cellpadding="0" cellspacing="0" width="960" height="100">
+	<!-- MSTableType="layout" -->
+	<tr>
+	<td valign="top" width="650">
+	<table cellpadding="0" cellspacing="0" width="690" height="100">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td valign="top" colspan="3" height="23" align="left">
+			<!-- MSCellType="empty" -->
+			    <a id="ctl00_ContentPlaceHolder1_GridView1_ctl04_HyperLink1t" href="showdoc.aspx?Id=1871"><font color="#CC6600" size="5">Haji Aghajan sayeedi</font></a></td></tr><tr>
+			<td valign="top" colspan="3" height="56" align="left">
+			<!-- MSCellType="empty" -->
+			    Haji Aghajan son of Sayyed Mohammad Khan was born in Kapisa  province in 1957, he is married and lives in Kabul</td>
+		</tr>
+		<tr>
+			<td valign="top" width="360" style="font-size: 10pt;" align="right">
+			<!-- MSCellType="empty" -->     Document<img id="ctl00_ContentPlaceHolder1_GridView1_ctl04_Image3" src="../image/Image_WebSite/Document.bmp" border="0" />
+			</td>
+			<td valign="top" width="300" style="font-size: 12pt;" align="right">
+			    <SUB>Sunday 27 January 2013</SUB>
+			</td>
+			<td valign="top" height="21" width="190">
+			    <a id="ctl00_ContentPlaceHolder1_GridView1_ctl04_HyperLink2" href="showdoc.aspx?Id=1871"><font size="2">Read more...<img id="ctl00_ContentPlaceHolder1_GridView1_ctl04_Image1" src="../image/Image_WebSite/red_dbl_arrwr.gif" border="0" /></font></a>
+			</td>
+		</tr>
+	</table>
+	</td>
+		<td valign="top" height="100" width="100">
+		<!-- MSCellType="ContentBody" -->
+		
+		
+		<a id="ctl00_ContentPlaceHolder1_GridView1_ctl04_HyperLink1" href="showdoc.aspx?Id=1871"><img id="ctl00_ContentPlaceHolder1_GridView1_ctl04_Image2" src="http://www.wolesi.website/Media/Images/mine/haji-aghajan-m.JPG" height="75" width="105" border="0" /></a></td></tr><tr>
+		<td valign="top">
+		<!-- MSCellType="ContentBody" -->
+		</td>
+	</tr>
+</table>
+            <table border="0" cellpadding="0" cellspacing="0" width="960" height="3" style="background-color: #9999ff;">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" height="3" width="960">
+		<!-- MSCellType="ContentBody" -->
+		</td>
+	</tr>
+</table>
+</td>
+	</tr>
+</table>
+</td>
+		</tr><tr>
+			<td>
+<table border="0" cellpadding="0" cellspacing="0" width="960" height="105">
+	<!-- MSTableType="layout" -->
+	
+	<tr>
+		<td valign="top" height="100" width="960">
+		<table border="0" cellpadding="0" cellspacing="0" width="960" height="100">
+	<!-- MSTableType="layout" -->
+	<tr>
+	<td valign="top" width="650">
+	<table cellpadding="0" cellspacing="0" width="690" height="100">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td valign="top" colspan="3" height="23" align="left">
+			<!-- MSCellType="empty" -->
+			    <a id="ctl00_ContentPlaceHolder1_GridView1_ctl05_HyperLink1t" href="showdoc.aspx?Id=1869"><font color="#CC6600" size="5">Querbanali-Erfoni</font></a></td></tr><tr>
+			<td valign="top" colspan="3" height="56" align="left">
+			<!-- MSCellType="empty" -->
+			    Querbanali-Erfoni son of Abrihim was born in 1944, in Bamyan province; he is married and lives in Kabul</td>
+		</tr>
+		<tr>
+			<td valign="top" width="360" style="font-size: 10pt;" align="right">
+			<!-- MSCellType="empty" -->     Document<img id="ctl00_ContentPlaceHolder1_GridView1_ctl05_Image3" src="../image/Image_WebSite/Document.bmp" border="0" />
+			</td>
+			<td valign="top" width="300" style="font-size: 12pt;" align="right">
+			    <SUB>Wednesday 23 January 2013</SUB>
+			</td>
+			<td valign="top" height="21" width="190">
+			    <a id="ctl00_ContentPlaceHolder1_GridView1_ctl05_HyperLink2" href="showdoc.aspx?Id=1869"><font size="2">Read more...<img id="ctl00_ContentPlaceHolder1_GridView1_ctl05_Image1" src="../image/Image_WebSite/red_dbl_arrwr.gif" border="0" /></font></a>
+			</td>
+		</tr>
+	</table>
+	</td>
+		<td valign="top" height="100" width="100">
+		<!-- MSCellType="ContentBody" -->
+		
+		
+		<a id="ctl00_ContentPlaceHolder1_GridView1_ctl05_HyperLink1" href="showdoc.aspx?Id=1869"><img id="ctl00_ContentPlaceHolder1_GridView1_ctl05_Image2" src="http://www.wolesi.website/Media/Images/mine/m-ghorbanali-erfani.jpg" height="75" width="105" border="0" /></a></td></tr><tr>
+		<td valign="top">
+		<!-- MSCellType="ContentBody" -->
+		</td>
+	</tr>
+</table>
+            <table border="0" cellpadding="0" cellspacing="0" width="960" height="3" style="background-color: #9999ff;">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" height="3" width="960">
+		<!-- MSCellType="ContentBody" -->
+		</td>
+	</tr>
+</table>
+</td>
+	</tr>
+</table>
+</td>
+		</tr><tr>
+			<td>
+<table border="0" cellpadding="0" cellspacing="0" width="960" height="105">
+	<!-- MSTableType="layout" -->
+	
+	<tr>
+		<td valign="top" height="100" width="960">
+		<table border="0" cellpadding="0" cellspacing="0" width="960" height="100">
+	<!-- MSTableType="layout" -->
+	<tr>
+	<td valign="top" width="650">
+	<table cellpadding="0" cellspacing="0" width="690" height="100">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td valign="top" colspan="3" height="23" align="left">
+			<!-- MSCellType="empty" -->
+			    <a id="ctl00_ContentPlaceHolder1_GridView1_ctl06_HyperLink1t" href="showdoc.aspx?Id=1868"><font color="#CC6600" size="5">Ezatullah Atef</font></a></td></tr><tr>
+			<td valign="top" colspan="3" height="56" align="left">
+			<!-- MSCellType="empty" -->
+			    Ezatullah Atef son of Mohammed Roze was born in Kabul in 1963; he is married and lives in Kabul</td>
+		</tr>
+		<tr>
+			<td valign="top" width="360" style="font-size: 10pt;" align="right">
+			<!-- MSCellType="empty" -->     Document<img id="ctl00_ContentPlaceHolder1_GridView1_ctl06_Image3" src="../image/Image_WebSite/Document.bmp" border="0" />
+			</td>
+			<td valign="top" width="300" style="font-size: 12pt;" align="right">
+			    <SUB>Wednesday 23 January 2013</SUB>
+			</td>
+			<td valign="top" height="21" width="190">
+			    <a id="ctl00_ContentPlaceHolder1_GridView1_ctl06_HyperLink2" href="showdoc.aspx?Id=1868"><font size="2">Read more...<img id="ctl00_ContentPlaceHolder1_GridView1_ctl06_Image1" src="../image/Image_WebSite/red_dbl_arrwr.gif" border="0" /></font></a>
+			</td>
+		</tr>
+	</table>
+	</td>
+		<td valign="top" height="100" width="100">
+		<!-- MSCellType="ContentBody" -->
+		
+		
+		<a id="ctl00_ContentPlaceHolder1_GridView1_ctl06_HyperLink1" href="showdoc.aspx?Id=1868"><img id="ctl00_ContentPlaceHolder1_GridView1_ctl06_Image2" src="http://www.wolesi.website/Media/Images/mine/m-ezatullah-atef.jpg" height="75" width="105" border="0" /></a></td></tr><tr>
+		<td valign="top">
+		<!-- MSCellType="ContentBody" -->
+		</td>
+	</tr>
+</table>
+            <table border="0" cellpadding="0" cellspacing="0" width="960" height="3" style="background-color: #9999ff;">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" height="3" width="960">
+		<!-- MSCellType="ContentBody" -->
+		</td>
+	</tr>
+</table>
+</td>
+	</tr>
+</table>
+</td>
+		</tr>
+	</table>
+</div>
+   
+   
+	
+
+
+    <table style="width: 100%;">
+      <tr>
+        
+        <td style="width: 50%;">
+        <a id="ctl00_ContentPlaceHolder1_lnkPreviousPage" href="?Page=22&amp;Cat=37"><img src="../image/Image_WebSite/ebefor.PNG" alt="" border="0" /></a></td><td style="width: 50%;" dir="rtl" align="left">
+          <a id="ctl00_ContentPlaceHolder1_lnkNextPage" href="?Page=24&amp;Cat=37"><img src="../image/Image_WebSite/ebaed.PNG" alt="" border="0" /></a></td></tr></table></div>  
+            
+              
+            <img id="ctl00_Image1" src="../image/fot.jpg" border="0" />
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" height="10">
+		</td></tr></table>    
+ 
+    
+
+
+
+
+   
+    </div>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_Menu1_Data = new Object();
+ctl00_Menu1_Data.disappearAfter = 500;
+ctl00_Menu1_Data.horizontalOffset = 2;
+ctl00_Menu1_Data.verticalOffset = 0;
+ctl00_Menu1_Data.hoverClass = 'myclasstra14';
+//]]>
+</script>
+</form></body></html>
