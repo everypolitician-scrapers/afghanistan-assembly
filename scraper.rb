@@ -26,7 +26,7 @@ def scrape_list(url)
   noko.css('#ctl00_ContentPlaceHolder1_GridView1 table a').to_a.uniq { |n| n.attr('href') }.each do |a|
     # too many variations in layout on these pages to usefully scrape...
     link = URI.join(url, a.attr('href')).to_s
-    data = { 
+    data = {
       id: link[/Id=(\d+)/, 1],
       name: a.text.tidy,
       image: a.xpath('following::img[contains(@src,"Images")][1]/@src').text,
