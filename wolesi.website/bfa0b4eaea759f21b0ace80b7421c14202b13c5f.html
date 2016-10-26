@@ -1,0 +1,525 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" align="center" >
+<head id="ctl00_Head1"><title>
+
+</title>
+
+      
+
+<script type="text/javascript" src='js/jquery-1.4.4.min.js'></script>
+    <script type="text/javascript" src='js/ticker.js'></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link href="../css/stylesme.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/DefaultTheme/jquery-ui-1.8.14.css" type="text/css" rel="stylesheet" /></head>
+<body background="image/main_bg0.png" >
+    <form name="aspnetForm" method="post" action="showdoc.aspx?Id=1826" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTI1MDQ0NDExMg9kFgJmD2QWAgIDD2QWCAINDzwrAA0BDBQrAAcFFzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1FCsAAhYKHgtOYXZpZ2F0ZVVybAUtaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD0xHgVWYWx1ZQUBMR4ISW1hZ2VVcmxlHgRUZXh0BRNHZW5lcmFsIEluZm9ybWF0aW9uHgpTZWxlY3RhYmxlaBQrAAcFFzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1FCsAAhYKHwAFKWh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD0yHwEFATIfAmUfAwUMQ29uc3RpdHV0aW9uHwRnZBQrAAIWCh8ABS1odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL2RvY3VtZW50LmFzcHg/Q2F0PTkfAQUBOR8CZR8DBRJSdWxlcyBvZiBQcm9jZWR1cmUfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9MTkfAQUCMTkfAmUfAwURTGlicmFyeSAmIEFyY2hpdmUfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9MjYfAQUCMjYfAmUfAwUSQXNzZW1ibGllcyBIaXN0b3J5HwRnZBQrAAIWCh8ABS5odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL2RvY3VtZW50LmFzcHg/Q2F0PTg1HwEFAjg1HwJlHwMFC1B1YmxpY2F0aW9uHwRnZBQrAAIWCh8ABS5odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL2RvY3VtZW50LmFzcHg/Q2F0PTk2HwEFAjk2HwJlHwMFCkNvbnRhY3QgdXMfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9MjEfAQUCMjEfAmUfAwUMV0ogU3RydWN0dXJlHwRoFCsABgUTMDowLDA6MSwwOjIsMDozLDA6NBQrAAIWCh8ABSpodHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL3BhZ2UuYXNweD9DYXQ9MjgfAQUCMjgfAmUfAwUKTGVhZGVyc2hpcB8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD0yOR8BBQIyOR8CZR8DBQtDb21taXNzaW9ucx8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD0zMR8BBQIzMR8CZR8DBRRQYXJsaWFtZW50YXJ5IEdyb3Vwcx8EZ2QUKwACFgofAAUqaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9QYWdlLmFzcHg/Q2F0PTM4HwEFAjM4HwJlHwMFE0dlbmVyYWwgU2VjcmV0YXJpYXQfBGdkFCsAAhYKHwAFKmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD01MB8BBQI1MB8CZR8DBRVQLiBGcmllbmRzaGlwIEdyb3VwcyAfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9MzkfAQUCMzkfAmUfAwUQTmV3cyBhbmQgUmVwb3J0cx8EaBQrAAkFHzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1LDA6NiwwOjcUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD0xMB8BBQIxMB8CZR8DBQ9BY2NvbXBsaXNobWVudHMfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9NDAfAQUCNDAfAmUfAwUIU2Vzc2lvbiAfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9NDEfAQUCNDEfAmUfAwUMQ29tbWlzc2lvbnMgHwRnZBQrAAIWCh8ABS5odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL2RvY3VtZW50LmFzcHg/Q2F0PTQyHwEFAjQyHwJlHwMFCU1lZXRpbmdzIB8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD00Mx8BBQI0Mx8CZR8DBQVUcmlwcx8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD00NB8BBQI0NB8CZR8DBQhNZXNzYWdlcx8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD01Mh8BBQI1Mh8CZR8DBRNHZW5lcmFsIFNlY3JldGFyaWF0HwRnZBQrAAIWCh8ABS9odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL2RvY3VtZW50LmFzcHg/Q2F0PTEwMB8BBQMxMDAfAmUfAwULTVBzIFJlcG9ydHMfBGdkFCsAAhYKHwAFLmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvZG9jdW1lbnQuYXNweD9DYXQ9NTEfAQUCNTEfAmUfAwUJQmlvZ3JhcGh5HwRnFCsABAULMDowLDA6MSwwOjIUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD04NB8BBQI4NB8CZR8DBRVBZG1pbmlzdHJhdGlvbiBCb2FyZCAfBGdkFCsAAhYKHwAFKmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD05Mx8BBQI5Mx8CZR8DBRFTZWNyZXRhcnkgR2VuZXJhbB8EZ2QUKwACFgofAAUraHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9wYWdlLmFzcHg/Q2F0PTEwMR8BBQMxMDEfAmUfAwUNTVBzIEJpb2dyYXBoeR8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD04Nh8BBQI4Nh8CZR8DBQhSZXNvdWNlcx8EaBQrAAgFGzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1LDA6NhQrAAIWCh8ABSpodHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL3BhZ2UuYXNweD9DYXQ9ODcfAQUCODcfAmUfAwUbTGVnaXNsYXRpdmUgVHJhY2tpbmcgU3lzdGVtHwRnZBQrAAIWCh8ABSpodHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL3BhZ2UuYXNweD9DYXQ9ODgfAQUCODgfAmUfAwUOSVBVIEFjdGl2aXRpZXMfBGdkFCsAAhYKHwAFKmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD04OR8BBQI4OR8CZR8DBQ9QVUlDIEFjdGl2aXRpZXMfBGdkFCsAAhYKHwAFKmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD05MB8BBQI5MB8CZR8DBQRJRkxBHwRnZBQrAAIWCh8ABS5odHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL0RvY3VtZW50LmFzcHg/Q2F0PTkxHwEFAjkxHwJlHwMFEU9yZGVycyBvZiB0aGUgZGF5HwRnZBQrAAIWCh8ABSpodHRwOi8vd29sZXNpLndlYnNpdGUvcHZlL3BhZ2UuYXNweD9DYXQ9OTgfAQUCOTgfAmUfAwUEQVdQQx8EZ2QUKwACFgofAAUuaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9kb2N1bWVudC5hc3B4P0NhdD05OR8BBQI5OR8CZR8DBRdDb250cmFjdHMgQWR2ZXJ0aXNlbWVudB8EZ2QUKwACFgofAAUqaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9wYWdlLmFzcHg/Q2F0PTkyHwEFAjkyHwJlHwMFE0dlbmVyYWwgU2VjcmV0YXJpYXQfBGgUKwADBQcwOjAsMDoxFCsAAhYKHwAFKmh0dHA6Ly93b2xlc2kud2Vic2l0ZS9wdmUvcGFnZS5hc3B4P0NhdD05NB8BBQI5NB8CZR8DBRRHZW5lcmFsIERpcmVjdG9yYXRlcx8EZ2QUKwACFgofAAUqaHR0cDovL3dvbGVzaS53ZWJzaXRlL3B2ZS9wYWdlLmFzcHg/Q2F0PTk1HwEFAjk1HwJlHwMFDERpcmVjdG9yYXRlcx8EZ2RkAg8PDxYCHwMFGVdlZG5lc2RheSAyNiBPY3RvYmVyIDIwMTZkZAIRD2QWBAIBDzwrAAoBAA8WBB4LXyFEYXRhQm91bmRnHgtfIUl0ZW1Db3VudAIBZBYCZg9kFgZmDw8WAh4HVmlzaWJsZWhkZAIBD2QWAmYPZBYCAgEPDxYCHwMFvSw8aW1nIHNyYz0iL21lZGlhL2ltYWdlcy8xNnRoLXZha2lsL2ZvenlhLXJvZmkuSlBHIiBhbHQ9ImZvenlhLXJvZmkuSlBHIiBhbGlnbj0iYWJzbWlkZGxlIiBib3JkZXI9IjAiIGhlaWdodD0iMTcwIiB3aWR0aD0iMTI3Ij48YnI+PCEtLVtpZiBndGUgbXNvIDldPjx4bWw+DQogPG86T2ZmaWNlRG9jdW1lbnRTZXR0aW5ncz4NCiAgPG86QWxsb3dQTkcvPg0KIDwvbzpPZmZpY2VEb2N1bWVudFNldHRpbmdzPg0KPC94bWw+PCFbZW5kaWZdLS0+DQoNCjxwIGNsYXNzPSJNc29Ob3JtYWwiIHN0eWxlPSJtYXJnaW4tYm90dG9tOjBpbjttYXJnaW4tYm90dG9tOi4wMDAxcHQ7bGluZS1oZWlnaHQ6DQpub3JtYWwiPjxiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O1RhaG9tYSZxdW90OywmcXVvdDtzYW5zLXNlcmlmJnF1b3Q7Ow0KY29sb3I6I0UzNkMwQTttc28tdGhlbWVjb2xvcjphY2NlbnQ2O21zby10aGVtZXNoYWRlOjE5MSI+Rm93emlhIFJhb3VmaTwvc3Bhbj48L2I+PC9wPg0KDQo8cCBjbGFzcz0iRGVmYXVsdCI+PGI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7VGFob21hJnF1b3Q7LCZxdW90O3NhbnMtc2VyaWYmcXVvdDsiPlByb3ZpbmNlOg0KPC9zcGFuPjwvYj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+RmFyeWFiDQo8L3NwYW4+PC9wPg0KDQo8cCBjbGFzcz0iRGVmYXVsdCI+PGI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7VGFob21hJnF1b3Q7LCZxdW90O3NhbnMtc2VyaWYmcXVvdDsiPkRpc3RyaWN0PC9zcGFuPjwvYj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+OiBNYWltYW5hIDwvc3Bhbj48L3A+DQoNCjxwIGNsYXNzPSJEZWZhdWx0Ij48Yj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+Vm90ZXM6DQo8L3NwYW4+PC9iPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O1RhaG9tYSZxdW90OywmcXVvdDtzYW5zLXNlcmlmJnF1b3Q7Ij4yNDgwDQo8L3NwYW4+PC9wPg0KDQo8cCBjbGFzcz0iRGVmYXVsdCI+PGI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7VGFob21hJnF1b3Q7LCZxdW90O3NhbnMtc2VyaWYmcXVvdDsiPlBob25lOg0KPC9zcGFuPjwvYj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+MDc5OTI3MTUwNw0KPC9zcGFuPjwvcD4NCg0KPHAgY2xhc3M9IkRlZmF1bHQiPjxiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O1RhaG9tYSZxdW90OywmcXVvdDtzYW5zLXNlcmlmJnF1b3Q7Ij5BZ2U6DQo8L3NwYW4+PC9iPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O1RhaG9tYSZxdW90OywmcXVvdDtzYW5zLXNlcmlmJnF1b3Q7Ij40MSA8Yj5JbmN1bWJlbnQNCjwvYj48L3NwYW4+PC9wPg0KDQo8cCBjbGFzcz0iRGVmYXVsdCI+PGI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7VGFob21hJnF1b3Q7LCZxdW90O3NhbnMtc2VyaWYmcXVvdDsiPkZpcnN0DQpsYW5ndWFnZTogPC9zcGFuPjwvYj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+RGFyaQ0KPC9zcGFuPjwvcD4NCg0KPHAgY2xhc3M9IkRlZmF1bHQiPjxiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O1RhaG9tYSZxdW90OywmcXVvdDtzYW5zLXNlcmlmJnF1b3Q7Ij5QYXJ0eQ0KQWZmaWxpYXRpb246IDwvc3Bhbj48L2I+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7VGFob21hJnF1b3Q7LCZxdW90O3NhbnMtc2VyaWYmcXVvdDsiPkluZGVwZW5kZW50DQo8L3NwYW4+PC9wPg0KDQo8cCBjbGFzcz0iRGVmYXVsdCI+PGI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6JnF1b3Q7VGFob21hJnF1b3Q7LCZxdW90O3NhbnMtc2VyaWYmcXVvdDsiPkNvbW1pc3Npb24NCigyMDEyKTogPC9zcGFuPjwvYj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+VHJhbnNwb3J0LA0KVGVsZWNvbW11bmljYXRpb25zLCBVcmJhbiBhbmQgSG91c2luZyBBZmZhaXJzLCBXYXRlciBhbmQgUG93ZXIgU3VwcGx5IGFuZA0KTXVuaWNpcGFsIEFmZmFpcnMgPC9zcGFuPjwvcD4NCg0KPHAgY2xhc3M9IkRlZmF1bHQiPjxiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O1RhaG9tYSZxdW90OywmcXVvdDtzYW5zLXNlcmlmJnF1b3Q7Ij5QZXJzb25hbA0KYmFja2dyb3VuZDogPC9zcGFuPjwvYj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+Rm93emlhDQpSYW91ZmksIGRhdWdodGVyIG9mIEFiZHVsIFJhb3VmLCB3YXMgYm9ybiBpbiAxOTcwLCBpbiB0aGUgZmlmdGggZGlzdHJpY3Qgb2YNCk1haW1hbmEgY2l0eSAoQWZnaGFuIEtvdCBhcmVhKSBpbiBGYXJ5YWIgcHJvdmluY2UuIFNoZSBpcyBtYXJyaWVkIGFuZCBoYXMgb25lDQpkYXVnaHRlci4gU2hlIGhhcyB0cmF2ZWxlZCB0byBGcmFuY2UsIExvbmRvbiwgQ2FuYWRhLCB0aGUgTmV0aGVybGFuZHMsIEJlbGdpdW0sDQpJbmRpYSwgVHVya2V5LCBHZXJtYW55LCBGcmFuY2UgYW5kIFNhdWRpIEFyYWJpYSBmb3IgaW50ZXJuYXRpb25hbCBjb25mZXJlbmNlcy4NClJhb3VmaSBpcyBpbnRlcmVzdGVkIGluIHJlYWRpbmcuIEhlciBmaXJzdCBsYW5ndWFnZSBpcyBEYXJpIGFuZCBzaGUgYWxzbyBzcGVha3MNClV6YmVrLCBFbmdsaXNoIGFuZCBQYXNodG8uIDwvc3Bhbj48L3A+DQoNCjxwIGNsYXNzPSJEZWZhdWx0Ij48Yj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+RWR1Y2F0aW9uOg0KPC9zcGFuPjwvYj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+UmFvdWZpDQpjb21wbGV0ZWQgaGVyIHNlY29uZGFyeSBlZHVjYXRpb24gYXQgU2l0YXJhIEhpZ2ggU2Nob29sLCBGYXJ5YWIgaW4gMTk4OS4gU2hlDQpnb3QgaGVyIGJhY2hlbG9y4oCZcyBkZWdyZWUgZnJvbSB0aGUgUGVkYWdvZ2ljYWwgSW5zdGl0dXRlIGluIEZhcnlhYiBwcm92aW5jZSBpbg0KMTk5My4gPC9zcGFuPjwvcD4NCg0KPHAgY2xhc3M9IkRlZmF1bHQiPjxiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O1RhaG9tYSZxdW90OywmcXVvdDtzYW5zLXNlcmlmJnF1b3Q7Ij5DaXZpbA0Kc29jaWV0eS9OR08gY29ubmVjdGlvbnM6IDwvc3Bhbj48L2I+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMC4wcHQ7Zm9udC1mYW1pbHk6DQomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+UmFvdWZpIGhhcyB3b3JrZWQgd2l0aCBJbnRlcm5hdGlvbmFsIE5HT3MuIDwvc3Bhbj48L3A+DQoNCjxwIGNsYXNzPSJEZWZhdWx0Ij48Yj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+UHJldmlvdXMNCm9jY3VwYXRpb248L3NwYW4+PC9iPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2ZvbnQtZmFtaWx5OiZxdW90O1RhaG9tYSZxdW90OywmcXVvdDtzYW5zLXNlcmlmJnF1b3Q7Ij46DQpSYW91ZmkgaGFzIHdvcmtlZCBpbiBib3RoIGdvdmVybm1lbnQgYW5kIG5vbi1nb3Zlcm5tZW50YWwgb2ZmaWNlcywgaW5jbHVkaW5nDQppbnRlcm5hdGlvbmFsIG9yZ2FuaXphdGlvbnMuIEFmdGVyIHJlY2VpdmluZyBoZXIgYmFjaGVsb3LigJlzIGRlZ3JlZSwgUmFvdWZpDQp3b3JrZWQgYXMgYSB0ZWFjaGVyIGFuZCB0aGVuIGFzIHRoZSBwcmluY2lwYWwgb2YgaGlnaCBzY2hvb2xzIGluIGJvdGggRmFyeWFiDQpwcm92aW5jZSBhbmQgTWF6YXItZS1TaGFyaWYgdW50aWwgdGhlIFRhbGliYW4gcGVyaW9kIGJlZ2FuLiBBZnRlciB0aGUgVGFsaWJhbg0KY2FtZSB0byBwb3dlciwgc2hlIHdvcmtlZCBhcyBhIGZpZWxkIG9mZmljZXIgZm9yIERvY3RvcnMgd2l0aG91dCBCb3JkZXJzLCB0aGVuDQphdCB0aGUgVW5pdGVkIE5hdGlvbuKAmXMgQ2hpbGRyZW4gRnVuZCAoVU5JQ0VGKSBhcyBmb2NhbCBwb2ludC9jb21tdW5pY2F0aW9ucw0Kb2ZmaWNlciBmb3IgdHdvIHllYXJzIGluIHNlY3RvcnMgaW5jbHVkaW5nIHdhdGVyIHN1cHBseSwgZWR1Y2F0aW9uIGFuZCBoZWFsdGgNCmluIEZhcnlhYiBwcm92aW5jZS4gUmFvdWZpIGFsc28gd29ya2VkIHdpdGggdGhlIFVuaXRlZCBOYXRpb25zIEFzc2lzdGFuY2UNCk1pc3Npb24gaW4gQWZnaGFuaXN0YW4gKFVOQU1BKSBmb3IgMTggbW9udGhzIGluIHRoZSBzZWN1cml0eSBkZXBhcnRtZW50IGFuZCBhdA0KdGhlIE5hdGlvbmFsIFNvbGlkYXJpdHkgUHJvZ3JhbSBhcyBhIHJlZ2lvbmFsIG9mZmljZXIuIDwvc3Bhbj48L3A+DQoNCjxwIGNsYXNzPSJEZWZhdWx0Ij48Yj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+MjAwNQ0KUGFybGlhbWVudDogPC9zcGFuPjwvYj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtmb250LWZhbWlseTomcXVvdDtUYWhvbWEmcXVvdDssJnF1b3Q7c2Fucy1zZXJpZiZxdW90OyI+UmFvdWZpDQp3YXMgZWxlY3RlZCB0byBwYXJsaWFtZW50IGluIDIwMDUgd2l0aCA0LDg5NyB2b3Rlcy4gRHVyaW5nIHRoZSAyMDA1IHBhcmxpYW1lbnQNCnNoZSBzZXJ2ZWQgb24gdGhlIEN1bHR1cmFsIGFuZCBSZWxpZ2lvdXMgQWZmYWlycyBDb21taXNzaW9uLiA8L3NwYW4+PC9wPg0KDQo8cCBjbGFzcz0iTXNvTm9ybWFsIj48Yj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjEwLjBwdDtsaW5lLWhlaWdodDoxMTUlOw0KZm9udC1mYW1pbHk6JnF1b3Q7VGFob21hJnF1b3Q7LCZxdW90O3NhbnMtc2VyaWYmcXVvdDsiPk90aGVyIGluZm9ybWF0aW9uOiA8L3NwYW4+PC9iPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTAuMHB0O2xpbmUtaGVpZ2h0OjExNSU7Zm9udC1mYW1pbHk6JnF1b3Q7VGFob21hJnF1b3Q7LCZxdW90O3NhbnMtc2VyaWYmcXVvdDsiPlJhb3VmaQ0KaGFzIGJlZW4gb3V0c3Bva2VuIGR1cmluZyBoZXIgdGltZSBpbiBwYXJsaWFtZW50IGFib3V0IHRoZSBsYWNrIG9mIHNlcnZpY2VzDQphdmFpbGFibGUgdG8gd29tZW4gaW4gRmFyeWFiLjwvc3Bhbj48L3A+DQoNCmRkAgIPDxYCHwdoZGQCAw8PZA8QFgFmFgEWAh4OUGFyYW1ldGVyVmFsdWUFBDE4MjYWAQIEZGQCEw9kFgICBw88KwARAgEQFgAWABYADBQrAABkGAMFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQxjdGwwMCRzZWFyY2gFI2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjIkR3JpZFZpZXcxDzwrAAwCAgICCAL/////D2QFI2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkRm9ybVZpZXcxDxQrAAdkZGRkFQECSWQWAQ8FAklkAqIOAgFkA2CL8NaMnWeFjCAYy4YYZ7qVKxpHxf45boiUVS0jT3U=" />
+
+
+<script src="/WebResource.axd?d=gSdWIOibW5IZLLnjuJJBlrD2eJH5oEgVA0D1mxLiv1oG-pyxFEBGUsBL6IMOvg27Jr3wN6QtFrpNw3FXVmaVjkmUOqtTPJ8Dsrg7iyEN_5M1&amp;t=635586452020000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=3y3JYjjQrQLCJy1DMPW8mjOOBaP9QtzfBS1DjqX4QXdn2jLFtUD5O15a8x28jxSr3AH1z1yPeyDyO_KmulvnoTc-cOClVKvzU4y90hTYmZqxM52i4CHmfSQtWj-XgFi9w7kbqa6dQZFykxdmTDvVVtHCBlNRk15MxsVza5j8GM1EKGkmNWmJ6ynXEIG3c3FV0&amp;t=7b689585" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0FABE7D4" />
+      
+    <div>
+   
+                  
+
+    <table cellpadding="0" cellspacing="0" width="970"  style="border: thick solid #FFFFFF; background-color: #FFFFFF" align="center">
+	<!-- MSTableType="layout" -->
+     <tr>
+		<td valign="top"  
+             style="font-family: Arial, Helvetica, sans-serif; font-size: small" >
+		<!-- MSCellType="empty" -->
+        
+		
+  </td>
+        
+	</tr>
+	<tr>
+		<td valign="top" height="120" 
+            
+            style="background-image: url('../image/wenglishlogo.JPG'); color: #FFFFFF;" >
+		<!-- MSCellType="empty" -->
+        <table cellpadding="0" cellspacing="0" width="970" >
+	<!-- MSTableType="layout" -->
+	<tr dir="rtl">
+		<td valign="top" height="61">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+<a href="../english.aspx" id="ctl00_A2" style="color: #FFFFFF; font-family: Tahoma; font-size: 10px;">Home</a> <span class="Separator">|</span>	
+<a href="../pashto.aspx" id="ctl00_A3" style="color: #FFFFFF; font-size: 10px; font-family: Tahoma;">پشتو</a> <span class="Separator">|</span>
+<a href="../dari.aspx" id="ctl00_A1" style="color: #FFFFFF; font-family: Tahoma; font-size: 10px;">دری</a> <span class="Separator">|</span>
+	</td>
+	</tr>
+	<tr>
+		<td valign="top" height="24">
+		<table cellpadding="0" cellspacing="0" width="970" dir="rtl" >
+			<!-- MSTableType="layout" -->
+			<tr>
+				<td valign="top" width="20">
+				<!-- MSCellType="empty" -->
+				</td>
+                <td valign="top" width="46">
+				<div class="searchbtn">
+                    <input type="image" name="ctl00$search" id="ctl00_search" src="../image/Image_WebSite/searchbtne.png" border="0" /></div>
+                </td>
+				 <td valign="top" width="140">
+				<div class="searchbox">
+                        <input name="ctl00$searchbox" type="text" id="ctl00_searchbox" /></div></td>
+				<td valign="top" height="22" width="749">
+				<!-- MSCellType="empty" -->
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" height="20" width="970">
+		<!-- MSCellType="empty" -->
+		</td>
+	</tr>
+	</table>
+
+
+	</td>
+	</tr>
+  
+	<tr style="height: 12px">
+    <td valign="top"   
+            
+            
+            style="border-width: 3px; border-color: #FFFFFF; border-top-style: solid; height: 40px; background-image: url('../image/nav-bg.png');" >	
+        <table cellpadding="0" cellspacing="0" width="970" height="24">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" width="720">
+		<!-- MSCellType="empty" -->
+			<table id="ctl00_Menu1" cellpadding="0" cellspacing="0" border="0" height="40" width="110">
+	<tr>
+		<td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n0"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="#"><font color="#838383">General Information</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand General Information" valign="middle" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n1"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="#"><font color="#838383">WJ Structure</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand WJ Structure" valign="middle" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n2"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="#"><font color="#838383">News and Reports</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand News and Reports" valign="middle" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n3"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=51"><font color="#838383">Biography</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand Biography" valign="middle" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n4"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="#"><font color="#838383">Resouces</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand Resouces" valign="middle" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n5"><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="110">
+			<tr>
+				<td nowrap="nowrap"><a class="mybb18" href="#"><font color="#838383">General Secretariat</font></a></td><td width="0"><img src="../image/nav-bg.png" alt="Expand General Secretariat" valign="middle" /></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><div id="ctl00_Menu1n0Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n6">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=2"><font color="#7A7A7A">Constitution</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n7">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=9"><font color="#7A7A7A">Rules of Procedure</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n8">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=19"><font color="#7A7A7A">Library & Archive</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n9">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=26"><font color="#7A7A7A">Assemblies History</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n10">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=85"><font color="#7A7A7A">Publication</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n11">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=96"><font color="#7A7A7A">Contact us</font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n0ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n0ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n1Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n12">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=28"><font color="#7A7A7A">Leadership</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n13">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=29"><font color="#7A7A7A">Commissions</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n14">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=31"><font color="#7A7A7A">Parliamentary Groups</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n15">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/Page.aspx?Cat=38"><font color="#7A7A7A">General Secretariat</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n16">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=50"><font color="#7A7A7A">P. Friendship Groups </font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n1ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n1ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n2Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n17">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=10"><font color="#7A7A7A">Accomplishments</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n18">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=40"><font color="#7A7A7A">Session </font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n19">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=41"><font color="#7A7A7A">Commissions </font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n20">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=42"><font color="#7A7A7A">Meetings </font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n21">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=43"><font color="#7A7A7A">Trips</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n22">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=44"><font color="#7A7A7A">Messages</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n23">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=52"><font color="#7A7A7A">General Secretariat</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n24">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=100"><font color="#7A7A7A">MPs Reports</font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n2ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n2ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n3Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n25">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=84"><font color="#7A7A7A">Administration Board </font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n26">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=93"><font color="#7A7A7A">Secretary General</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n27">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=101"><font color="#7A7A7A">MPs Biography</font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n3ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n3ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n4Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n28">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=87"><font color="#7A7A7A">Legislative Tracking System</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n29">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=88"><font color="#7A7A7A">IPU Activities</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n30">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=89"><font color="#7A7A7A">PUIC Activities</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n31">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=90"><font color="#7A7A7A">IFLA</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n32">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/Document.aspx?Cat=91"><font color="#7A7A7A">Orders of the day</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n33">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=98"><font color="#7A7A7A">AWPC</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n34">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/document.aspx?Cat=99"><font color="#7A7A7A">Contracts Advertisement</font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n4ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n4ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n5Items" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n35">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=94"><font color="#7A7A7A">General Directorates</font></a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n36">
+			<td><table class="mybb18" cellpadding="0" cellspacing="0" border="0" width="100%" width="140">
+				<tr>
+					<td nowrap="nowrap" width="100%"><a class="mybb18" href="http://wolesi.website/pve/page.aspx?Cat=95"><font color="#7A7A7A">Directorates</font></a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="mybb18" id="ctl00_Menu1n5ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=43XzO27aWRSQBkejvKHQvUW8W_VODgZBt-H4NMV6z5eZ5T7K4UcntCp9P6BliB6NOPJt-YxmyNABTH7MimSjXm6Pfl-MVgH9AA1kOzxGEJ41&amp;t=635586452020000000" alt="Scroll up" />
+	</div><div class="mybb18" id="ctl00_Menu1n5ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;">
+		<img src="/WebResource.axd?d=hkhQ2akIqdD_pPbsg26AFsw3B1qTUELl3jhyfmzBWr8meoOzJ7xEQjEZjTRRtzD0OnyO38hFZJsRWc_ohaqcQLTaOtuNNHa0W5_G29a9Pbg1&amp;t=635586452020000000" alt="Scroll down" />
+	</div>
+</div></td>
+		<td valign="top" height="40" width="200">
+		<!-- MSCellType="empty" -->
+		  <span id="ctl00_Label1" style="display:inline-block;"><b><font face="tahoma" color="#009900" size="2">Wednesday 26 October 2016</font></b></span>
+        </td>
+	</tr>
+</table>
+
+
+
+
+       
+                          
+</td>
+	</tr>
+	
+    <tr>
+		<td valign="top" height="200">
+		    
+          
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+    <div>
+   <table cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_FormView1" width="950">
+	<tr>
+		<td colspan="2">
+ <table cellpadding="0" cellspacing="0" style="border-style: solid; border-width: 10px; border-color: #EFEFEF; background-color: #EFEFEF; width: 968px;">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top">
+       <span id="ctl00_ContentPlaceHolder1_FormView1_tDescriptionLabel" class="mybb18"><img src="/media/images/16th-vakil/fozya-rofi.JPG" alt="fozya-rofi.JPG" align="absmiddle" border="0" height="170" width="127"><br><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;
+color:#E36C0A;mso-themecolor:accent6;mso-themeshade:191">Fowzia Raoufi</span></b></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Province:
+</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Faryab
+</span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">District</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">: Maimana </span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Votes:
+</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">2480
+</span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Phone:
+</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">0799271507
+</span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Age:
+</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">41 <b>Incumbent
+</b></span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">First
+language: </span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Dari
+</span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Party
+Affiliation: </span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Independent
+</span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Commission
+(2012): </span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Transport,
+Telecommunications, Urban and Housing Affairs, Water and Power Supply and
+Municipal Affairs </span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Personal
+background: </span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Fowzia
+Raoufi, daughter of Abdul Raouf, was born in 1970, in the fifth district of
+Maimana city (Afghan Kot area) in Faryab province. She is married and has one
+daughter. She has traveled to France, London, Canada, the Netherlands, Belgium,
+India, Turkey, Germany, France and Saudi Arabia for international conferences.
+Raoufi is interested in reading. Her first language is Dari and she also speaks
+Uzbek, English and Pashto. </span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Education:
+</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Raoufi
+completed her secondary education at Sitara High School, Faryab in 1989. She
+got her bachelor’s degree from the Pedagogical Institute in Faryab province in
+1993. </span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Civil
+society/NGO connections: </span></b><span style="font-size:10.0pt;font-family:
+&quot;Tahoma&quot;,&quot;sans-serif&quot;">Raoufi has worked with International NGOs. </span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Previous
+occupation</span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">:
+Raoufi has worked in both government and non-governmental offices, including
+international organizations. After receiving her bachelor’s degree, Raoufi
+worked as a teacher and then as the principal of high schools in both Faryab
+province and Mazar-e-Sharif until the Taliban period began. After the Taliban
+came to power, she worked as a field officer for Doctors without Borders, then
+at the United Nation’s Children Fund (UNICEF) as focal point/communications
+officer for two years in sectors including water supply, education and health
+in Faryab province. Raoufi also worked with the United Nations Assistance
+Mission in Afghanistan (UNAMA) for 18 months in the security department and at
+the National Solidarity Program as a regional officer. </span></p>
+
+<p class="Default"><b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">2005
+Parliament: </span></b><span style="font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Raoufi
+was elected to parliament in 2005 with 4,897 votes. During the 2005 parliament
+she served on the Cultural and Religious Affairs Commission. </span></p>
+
+<p class="MsoNormal"><b><span style="font-size:10.0pt;line-height:115%;
+font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Other information: </span></b><span style="font-size:10.0pt;line-height:115%;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;">Raoufi
+has been outspoken during her time in parliament about the lack of services
+available to women in Faryab.</span></p>
+
+</span>
+		</td>
+	</tr>
+	
+		<!-- MSCellType="ContentBody" --> 
+                 
+</table>
+		
+                  
+            </td>
+	</tr>
+</table>
+       
+    </div>
+  
+
+   
+   
+
+
+     
+            
+              
+            <img id="ctl00_Image1" src="../image/fot.jpg" border="0" />
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" height="10">
+		</td></tr></table>    
+ 
+    
+
+
+
+
+   
+    </div>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_Menu1_Data = new Object();
+ctl00_Menu1_Data.disappearAfter = 500;
+ctl00_Menu1_Data.horizontalOffset = 2;
+ctl00_Menu1_Data.verticalOffset = 0;
+ctl00_Menu1_Data.hoverClass = 'myclasstra14';
+//]]>
+</script>
+</form></body></html>
