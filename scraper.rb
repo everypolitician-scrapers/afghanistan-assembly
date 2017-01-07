@@ -1,5 +1,6 @@
 #!/bin/env ruby
 # encoding: utf-8
+# frozen_string_literal: true
 
 require 'scraperwiki'
 require 'nokogiri'
@@ -11,7 +12,7 @@ require 'scraped_page_archive/open-uri'
 
 class String
   def tidy
-    self.gsub(/[[:space:]]+/, ' ').strip
+    gsub(/[[:space:]]+/, ' ').strip
   end
 end
 
@@ -28,17 +29,17 @@ def scrape_list(url)
     member_page = open(link)
 
     data = {
-      id: link[/Id=(\d+)/, 1],
-      name: a.text.tidy,
-      image: a.xpath('following::img[contains(@src,"Images")][1]/@src').text,
-      term: 2010,
+      id:     link[/Id=(\d+)/, 1],
+      name:   a.text.tidy,
+      image:  a.xpath('following::img[contains(@src,"Images")][1]/@src').text,
+      term:   2010,
       source: url.to_s,
     }
-    ScraperWiki.save_sqlite([:id, :term], data)
+    ScraperWiki.save_sqlite(%i(id term), data)
   end
 
   unless (next_page = noko.css('a#ctl00_ContentPlaceHolder1_lnkNextPage/@href')).empty?
-    scrape_list(URI.join url, next_page.text)
+    scrape_list(URI.join(url, next_page.text))
   end
 end
 
