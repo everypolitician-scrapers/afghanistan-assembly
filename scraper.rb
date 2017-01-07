@@ -3,8 +3,8 @@
 
 require 'scraperwiki'
 require 'nokogiri'
-require 'colorize'
 require 'pry'
+
 # require 'open-uri/cached'
 # OpenURI::Cache.cache_path = '.cache'
 require 'scraped_page_archive/open-uri'
@@ -21,7 +21,6 @@ end
 
 def scrape_list(url)
   noko = noko_for(url)
-  puts url.to_s.magenta
 
   noko.css('#ctl00_ContentPlaceHolder1_GridView1 table a').to_a.uniq { |n| n.attr('href') }.each do |a|
     # too many variations in layout on these pages to usefully scrape... loading them just to archive
