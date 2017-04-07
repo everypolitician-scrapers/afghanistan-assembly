@@ -37,5 +37,5 @@ def scrape_list(url)
   end
 end
 
-ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
+ScraperWiki.sqliteexecute('DROP TABLE data') rescue nil
 scrape_list('http://wolesi.website/pve/document.aspx?Cat=37')
