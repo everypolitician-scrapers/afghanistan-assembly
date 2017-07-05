@@ -19,23 +19,21 @@ response:
   headers:
     Cache-Control:
     - private
+    Content-Length:
+    - '88625'
     Content-Type:
     - text/html; charset=utf-8
-    Vary:
-    - Accept-Encoding
     Server:
     - Microsoft-IIS/7.5
     X-Aspnet-Version:
     - 4.0.30319
     Set-Cookie:
-    - ASP.NET_SessionId=odwkpaxw4wpz3mk0dgjmkycx; path=/; HttpOnly
+    - ASP.NET_SessionId=mihkf0m2k1j2equxzzbmpxwd; path=/; HttpOnly
     X-Powered-By:
     - ASP.NET
     Date:
-    - Sun, 02 Jul 2017 14:25:29 GMT
-    Content-Length:
-    - '16969'
+    - Wed, 05 Jul 2017 09:09:51 GMT
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Sun, 02 Jul 2017 14:25:25 GMT
+recorded_at: Wed, 05 Jul 2017 09:09:52 GMT
