@@ -28,12 +28,12 @@ response:
     X-Aspnet-Version:
     - 4.0.30319
     Set-Cookie:
-    - ASP.NET_SessionId=wlypr30mjrqsfuohizicx05b; path=/; HttpOnly
+    - ASP.NET_SessionId=1j3qcsfm3pm1a1k4fq4hreiz; path=/; HttpOnly
     X-Powered-By:
     - ASP.NET
     Date:
-    - Sat, 15 Jul 2017 20:28:54 GMT
+    - Sun, 16 Jul 2017 03:30:32 GMT
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Sat, 15 Jul 2017 20:28:55 GMT
+recorded_at: Sun, 16 Jul 2017 03:30:33 GMT
