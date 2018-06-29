@@ -26,16 +26,16 @@ response:
     Server:
     - Microsoft-IIS/8.5
     Set-Cookie:
-    - ASP.NET_SessionId=c5dnhilrjxk50jfqe3l3he3t; path=/; HttpOnly
+    - ASP.NET_SessionId=13ofrchjf2gbmixjgq4iz2wv; path=/; HttpOnly
     X-Aspnet-Version:
     - 4.0.30319
     X-Powered-By:
     - ASP.NET
     Date:
-    - Thu, 28 Jun 2018 21:42:58 GMT
+    - Fri, 29 Jun 2018 21:40:37 GMT
     Content-Length:
-    - '13644'
+    - '13633'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Thu, 28 Jun 2018 21:42:59 GMT
+recorded_at: Fri, 29 Jun 2018 21:40:37 GMT
