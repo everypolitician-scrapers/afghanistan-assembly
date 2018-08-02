@@ -24,7 +24,7 @@ response:
     Vary:
     - Accept-Encoding
     Set-Cookie:
-    - ASP.NET_SessionId=kgl2mi44wpxtw5vprs3uwa5b; path=/; HttpOnly
+    - ASP.NET_SessionId=bfak35urrwwrw51x3qgsuoma; path=/; HttpOnly
     X-Content-Type-Options:
     - nosniff
     Server:
@@ -32,10 +32,10 @@ response:
     X-Xss-Protection:
     - 1; mode=block
     Date:
-    - Wed, 01 Aug 2018 18:02:22 GMT
+    - Thu, 02 Aug 2018 17:28:56 GMT
     Content-Length:
-    - '12611'
+    - '12628'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 01 Aug 2018 18:02:23 GMT
+recorded_at: Thu, 02 Aug 2018 17:28:56 GMT
