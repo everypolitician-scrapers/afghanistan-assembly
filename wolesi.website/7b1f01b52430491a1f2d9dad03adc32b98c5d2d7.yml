@@ -23,19 +23,19 @@ response:
     - text/html; charset=utf-8
     Vary:
     - Accept-Encoding
-    Set-Cookie:
-    - ASP.NET_SessionId=u2wf2qd04yadslzdjt5ozhaz; path=/; HttpOnly
-    X-Content-Type-Options:
-    - nosniff
     Server:
-    - WWW Server/1.1
-    X-Xss-Protection:
-    - 1; mode=block
+    - Microsoft-IIS/8.5
+    Set-Cookie:
+    - ASP.NET_SessionId=i1jqxcjil3j4q4po3zvxdd3i; path=/; HttpOnly
+    X-Aspnet-Version:
+    - 4.0.30319
+    X-Powered-By:
+    - ASP.NET
     Date:
-    - Wed, 08 Aug 2018 05:58:34 GMT
+    - Thu, 09 Aug 2018 17:52:07 GMT
     Content-Length:
-    - '8105'
+    - '8110'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 08 Aug 2018 05:58:35 GMT
+recorded_at: Thu, 09 Aug 2018 17:52:07 GMT
