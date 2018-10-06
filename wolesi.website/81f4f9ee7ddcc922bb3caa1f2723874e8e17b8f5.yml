@@ -21,21 +21,19 @@ response:
     - private
     Content-Type:
     - text/html; charset=utf-8
-    Vary:
-    - Accept-Encoding
     Server:
     - Microsoft-IIS/8.5
     Set-Cookie:
-    - ASP.NET_SessionId=xi2qmtjbilzmqgu2kezoh2kk; path=/; HttpOnly
+    - ASP.NET_SessionId=smigx03ku52logtylwjps5jn; path=/; HttpOnly
     X-Aspnet-Version:
     - 4.0.30319
     X-Powered-By:
     - ASP.NET
     Date:
-    - Fri, 05 Oct 2018 09:09:39 GMT
+    - Sat, 06 Oct 2018 10:19:16 GMT
     Content-Length:
-    - '12422'
+    - '83211'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Fri, 05 Oct 2018 09:09:40 GMT
+recorded_at: Sat, 06 Oct 2018 10:19:17 GMT
